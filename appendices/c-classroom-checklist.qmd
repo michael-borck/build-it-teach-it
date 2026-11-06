@@ -1,0 +1,41 @@
+# Classroom Checklist {#sec-classroom-checklist}
+
+## Before class
+
+- [ ] Python 3.10+ on every machine
+- [ ] Package installed
+- [ ] Model available
+- [ ] `handsonai doctor` passes
+- [ ] Provider chosen: local, shared or cloud
+- [ ] API key policy written
+- [ ] Cost limit set
+- [ ] Data and privacy decision recorded
+- [ ] Demo tested
+- [ ] Offline fallback ready
+
+## Lesson
+
+- [ ] Objective visible
+- [ ] Prior knowledge checked
+- [ ] Demo runs
+- [ ] Student task is small
+- [ ] Core check is clear
+- [ ] One failure is tested
+- [ ] Discussion includes limits
+- [ ] Buffer for setup failures
+
+## Assessment
+
+- [ ] Rubric shared
+- [ ] AI-use disclosure explained
+- [ ] Explanation check planned
+- [ ] Peer review planned
+- [ ] Accessibility considered
+
+## After class
+
+- [ ] Collect evidence
+- [ ] Record what failed
+- [ ] Revise the lesson
+- [ ] Update the setup notes
+- [ ] Remove keys and student data

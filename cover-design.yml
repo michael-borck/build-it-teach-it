@@ -1,0 +1,13 @@
+version: 1
+style: editorial-c
+art: cover-art.png
+family: EDUCATION / AI PROJECTS
+accent: '#2F6F73'
+background: '#E0ECEC'
+title_lines:
+- Build It,
+- Teach It
+dark: false
+pixel: false
+scene: teach
+art_origin: Locally constructed editable vector illustration.

@@ -1,0 +1,20 @@
+# Module Map {#sec-module-map}
+
+| Module | Wrapper | Core idea | Classroom project |
+|---|---|---|---|
+| chat | System prompt and transcript | The model is stateless; memory is resent | Personality bot, quiz bot, journal |
+| rag | Search before the call | Evidence in the prompt | First RAG bot, PDF Q&A |
+| agent | Tools and a loop | The model proposes; the harness runs | Calculator agent, custom tool |
+| workflow | Folders and stages | Structure is readable and reviewable | Build a pipeline |
+| loop | Repetition and a goal | Stop when the goal is met | Improve until good |
+| eval | A judge | Score against criteria and calibrate | Judge your bot |
+| vision | Image tokens | One more input type | The talking picture |
+| voice | Speech converters | Ears and mouth around the chat loop | Smallest Pipecat |
+
+## The shared shape
+
+Every module is one model call plus a wrapper. Teach the shape first, then choose the module that fits the objective.
+
+## What the lab is not
+
+HandsOnAI is a learning lab, not a production framework. It deliberately leaves out retries, rate limits, observability, vector databases and large-scale evaluation. Those gaps are the next lesson, not a defect.

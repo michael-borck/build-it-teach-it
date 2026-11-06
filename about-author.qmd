@@ -1,0 +1,15 @@
+# About the Author {.unnumbered}
+
+**Michael Borck** is a software developer and educator working at the intersection of human expertise and artificial intelligence. He teaches applied AI, security and systems analysis, and builds hands-on labs for people who learn by doing.
+
+His books include *Conversation, Not Delegation*, *The Human Edge*, *Assume Breach*, *Substantiate, Don't Assume*, *Follow the Trace, Prove the Case*, *Break with Permission*, *Follow the Packet*, *SimpleBot*, *Speak Software*, *Build Web, Guide AI*, *Frame the System, Guide the AI* and *Build AI, Understand AI*.
+
+*Build It, Teach It* is the project and classroom companion to HandsOnAI. It treats a small build as the best way to understand a large idea, and teaching as the test of whether the understanding is real.
+
+---
+
+**Connect**
+
+- [GitHub projects](https://github.com/michael-borck)
+- [Free book collection](https://books.borck.education)
+- [LinkedIn](https://linkedin.com/in/michaelborck)

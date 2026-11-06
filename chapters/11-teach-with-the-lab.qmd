@@ -1,0 +1,128 @@
+# Teach with the Lab {#sec-teach}
+
+> A lesson plan is a sequence of questions, not a tour of features.
+
+## The Concept First
+
+HandsOnAI supports three teaching shapes:
+
+- **Guided tour (1 hour)**: demonstrate the shape, run one module, discuss the limits.
+- **Mini-project workshop (2-3 hours)**: plan, build, test and show one project.
+- **Multi-week unit**: chat, then RAG or agents, then a project and a showcase.
+
+The lesson plan names:
+
+- the learning objective
+- the prior knowledge
+- the demonstration
+- the student task
+- the check
+- the discussion
+- the extension
+
+A live demo can fail. That is a teaching opportunity if the failure is predictable and the fallback is ready.
+
+## Understanding Through a Cooking Class
+
+A cooking class does not show forty recipes. It teaches one technique, demonstrates it, lets the students cook and tastes the result together.
+
+The technique is the objective. The recipe is the project. The tasting is the assessment.
+
+## Discovering the Lesson with Your AI Partner
+
+### Exploration 1: Write the Objective
+
+Ask the AI to start with what students will be able to explain.
+
+```text
+Write a learning objective for a 90-minute HandsOnAI lesson. The students
+know Python basics. The objective must be observable in a short demo or
+explanation, not a vague appreciation of AI.
+```
+
+A good objective uses a verb: explain, build, test, compare.
+
+### Exploration 2: Plan the Flow
+
+Ask for a timed sequence.
+
+```text
+Turn this objective into a 90-minute lesson. Include the demonstration,
+the student build, the check, the discussion and the buffer. Mark where
+the model might fail and what the fallback is.
+```
+
+The buffer is part of the plan.
+
+### Exploration 3: Differentiate
+
+Ask for three levels.
+
+```text
+The class has beginners, students with some Python and a few advanced
+students. Adapt the same project for each group without changing the
+objective. Name the extension for the advanced group.
+```
+
+The objective stays; the scaffold changes.
+
+## From Concept to Practice
+
+A 90-minute lesson:
+
+| Time | Activity | Evidence |
+|---|---|---|
+| 10 | Hook and objective | Students can restate the goal |
+| 15 | Demo one module | Students see input and output |
+| 15 | Plan the project | Brief and core check |
+| 30 | Build | Running scaffold |
+| 10 | Test and peer review | One success and one failure |
+| 10 | Showcase and discussion | Explanation and limitation |
+
+## Build Task
+
+Write a 90-minute lesson for one project. Include the demo, the build, the check, the discussion and the fallback. Run the demo once before class.
+
+## Classroom Connection
+
+The lesson is not the tool. The tool is the example. The objective, the check and the discussion are what the students take away.
+
+## Practice Exercises
+
+**Exercise 11.1 (Level 1).** Name the three teaching shapes.
+
+**Exercise 11.2 (Level 2).** Write one observable objective.
+
+**Exercise 11.3 (Level 3).** Plan a 90-minute flow.
+
+**Exercise 11.4 (Level 4).** Adapt the same project for three levels.
+
+**Exercise 11.5 (Level 5).** Run the lesson and revise the timing from evidence.
+
+## Chapter Summary
+
+- Teach a sequence of questions, not a feature tour.
+- Name the objective, task, check and discussion.
+- Use the 1-hour, workshop or multi-week shape.
+- Prepare a fallback for a demo failure.
+- Differentiate the scaffold, not the objective.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Wrote an observable objective
+- [ ] Planned the flow
+- [ ] Prepared the fallback
+- [ ] Adapted for three levels
+- [ ] Tested the demo
+
+## Your Learning Journal
+
+1. Which part of the lesson took longest?
+2. Where did the demo fail?
+3. What did the students explain well?
+
+## Next Steps
+
+The lesson runs. The final chapter assesses it and keeps it safe.

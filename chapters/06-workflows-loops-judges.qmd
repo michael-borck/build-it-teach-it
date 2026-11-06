@@ -1,0 +1,125 @@
+# Workflows, Loops and Judges {#sec-control}
+
+> Structure is how a small model becomes a reliable process.
+
+## The Concept First
+
+Three modules add control:
+
+- **Workflow**: numbered stage folders, each with instructions and an output. One stage runs at a time, and a person reviews before the next.
+- **Loop**: repeat a step until a goal is met. `run_loop` stops on a goal or a maximum number of iterations. `run_ratchet` keeps only improvements.
+- **Evaluation**: an LLM judge scores output against stated criteria.
+
+They answer different questions:
+
+- Workflow: what are the stages, and where is the review gate?
+- Loop: when do we stop, and what counts as better?
+- Judge: how good is the output, against what standard?
+
+A judge is a model producing a score. It can be biased, inconsistent and fooled by confidence. Calibrate it against human marks before trusting it.
+
+## Understanding Through a Production Line
+
+A production line has stations, inspection benches and a stop rule. Each station does one job, and the inspector decides whether the work moves on.
+
+A workflow is the line. A loop is the repetition. A judge is the inspector.
+
+## Discovering Control with Your AI Partner
+
+### Exploration 1: Design the Stages
+
+Ask the AI to turn a task into a workflow.
+
+```text
+Turn this task into a three-stage workflow:
+[paste the task]
+
+For each stage, write the instruction, the input, the output and the
+review question. Explain what a person should check before the next
+stage runs.
+```
+
+A stage without a review question is a black box.
+
+### Exploration 2: Define the Goal
+
+Ask for a stopping rule.
+
+```text
+A loop improves a paragraph until it is clear and under 100 words.
+Write the goal check, the maximum iterations and the evidence that the
+loop stopped for the right reason.
+```
+
+The goal is a test, not a feeling.
+
+### Exploration 3: Calibrate the Judge
+
+Ask how to trust the score.
+
+```text
+A judge scores 20 answers from 1 to 5. Design a calibration check
+against your own marks. Include the agreement measure, the disagreements
+you would read closely and the cases where the judge should not be used.
+```
+
+A judge is a signal, not a verdict.
+
+## From Concept to Practice
+
+A control record:
+
+| Module | Use | Evidence |
+|---|---|---|
+| Workflow | Research, outline, draft | Stage outputs and review notes |
+| Loop | Improve until clear | Goal check and iteration log |
+| Ratchet | Keep only improvements | Score log and best version |
+| Judge | Score 20 answers | Criteria, scores, human comparison |
+
+## Build Task
+
+Build a three-stage workflow with a review after each stage. Then build a loop with a goal check. Compare what each structure makes visible.
+
+## Classroom Connection
+
+Structure is the difference between a demo and a process. Students can see the stage outputs, the loop log and the judge's reasoning. Those artefacts are easier to assess than a final paragraph.
+
+## Practice Exercises
+
+**Exercise 6.1 (Level 1).** Explain the difference between a workflow and a loop.
+
+**Exercise 6.2 (Level 2).** Write three stages for a writing task.
+
+**Exercise 6.3 (Level 3).** Define a goal check and a maximum iteration count.
+
+**Exercise 6.4 (Level 4).** Calibrate a judge against five human marks.
+
+**Exercise 6.5 (Level 5).** Build a workflow with a judge at the review gate and document the failure modes.
+
+## Chapter Summary
+
+- Workflows add stages and review gates.
+- Loops add repetition and a stopping rule.
+- Ratchets keep only improvements.
+- Judges score against criteria and need calibration.
+- Structure makes the process visible and assessable.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Designed a workflow
+- [ ] Defined a goal check
+- [ ] Ran a loop
+- [ ] Calibrated a judge
+- [ ] Named one failure mode
+
+## Your Learning Journal
+
+1. Which structure made the work clearest?
+2. Where did the loop stop?
+3. When would you not trust the judge?
+
+## Next Steps
+
+The process is structured. The next chapter adds senses.

@@ -1,0 +1,127 @@
+# Chat, Prompts and Memory {#sec-chat}
+
+> A chat model is stateless. The memory is a message list your code keeps.
+
+## The Concept First
+
+A chat request has two kinds of message:
+
+- **system**: the standing instruction that sets role, tone and rules
+- **user**: the question or instruction for this turn
+
+The model returns an assistant message. The next call starts fresh unless the application resends the earlier messages.
+
+That is the whole mechanism behind "memory". A chat product stores the transcript and sends it again on each turn. More history means more tokens, more cost and a larger payload. The context window is the limit.
+
+A bot is a function that calls the model with a fixed system prompt. A personality is a system prompt with a name.
+
+Prompting improves when you are specific, provide context, show an example and define the output format.
+
+## Understanding Through a Conversation at a Counter
+
+A clerk serves one customer at a time. When the next customer arrives, the clerk does not remember the previous conversation unless the notes are on the desk.
+
+The transcript is the notes. The system prompt is the shop's policy card.
+
+## Discovering Chat with Your AI Partner
+
+### Exploration 1: Change the System Prompt
+
+Ask the AI to compare two system prompts.
+
+```text
+Here are two system prompts for the same question:
+[paste them]
+
+Explain what changes in the answer and what stays the same. Which
+instruction is tone, which is constraint, and which is a claim the model
+cannot verify?
+```
+
+A good answer will separate style from substance.
+
+### Exploration 2: Test the Memory
+
+Ask what the model sees on the second turn.
+
+```text
+A chat sends: system "You are a tutor", user "My name is Sam", assistant
+reply, user "What is my name?". List the messages in the second request
+and explain why the answer can use the name.
+```
+
+The model is not remembering. The code resent the transcript.
+
+### Exploration 3: Find the Cost
+
+Ask what grows with the conversation.
+
+```text
+A conversation has 20 turns. Explain what grows on each turn: tokens,
+cost, latency and the risk of hitting the context window. Propose one
+way to keep the conversation useful without resending everything.
+```
+
+Summarisation, retrieval and a shorter system prompt are all options.
+
+## From Concept to Practice
+
+A chat record:
+
+| Field | Entry |
+|---|---|
+| System prompt | Tutor, one step at a time |
+| User turn | Explain a loop |
+| Assistant reply | Explanation and question |
+| History | Two messages |
+| Tokens | Usage from the call |
+| Cache | Enabled or not |
+| Limit | Context window and cost |
+
+## Build Task
+
+Run a `Conversation` with three turns. Print the message list before each call. Then set `HANDS_ON_AI_CACHE` and run the same prompt twice.
+
+## Classroom Connection
+
+The stateless model is a core AI-literacy idea. A student who understands it can explain why a chat forgets, why a long conversation costs more and why a fresh chat behaves like a stranger.
+
+## Practice Exercises
+
+**Exercise 3.1 (Level 1).** Explain the difference between the system and user messages.
+
+**Exercise 3.2 (Level 2).** Run a three-turn conversation and print the history.
+
+**Exercise 3.3 (Level 3).** Compare a system prompt that changes tone with one that adds a constraint.
+
+**Exercise 3.4 (Level 4).** Measure the token growth over five turns.
+
+**Exercise 3.5 (Level 5).** Design a memory strategy for a long classroom activity.
+
+## Chapter Summary
+
+- Chat sends system and user messages and receives an assistant reply.
+- The model is stateless; memory is a resent transcript.
+- More history means more tokens and cost.
+- A bot is a function with a fixed system prompt.
+- Specific prompts and examples improve the answer.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Explained the stateless call
+- [ ] Printed a transcript
+- [ ] Compared two system prompts
+- [ ] Measured token growth
+- [ ] Chose a memory strategy
+
+## Your Learning Journal
+
+1. What surprised you about memory?
+2. Which system prompt changed the answer most?
+3. When is a fresh chat the right choice?
+
+## Next Steps
+
+Chat is the base. The next chapter adds evidence with RAG.

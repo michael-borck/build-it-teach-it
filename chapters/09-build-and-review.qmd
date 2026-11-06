@@ -1,0 +1,124 @@
+# Build and Review {#sec-build}
+
+> A project is finished when someone else can run it and explain what it does.
+
+## The Concept First
+
+A reliable project has six steps:
+
+1. **Plan**: the brief, the inputs and the check.
+2. **Scaffold**: the smallest runnable file.
+3. **Implement**: one feature at a time.
+4. **Test**: the core check and one failure.
+5. **Document**: run instructions, inputs, outputs and limits.
+6. **Show**: a short demo and an explanation.
+
+The review is part of the build. A peer should be able to run the project, read the code and explain the model call.
+
+## Understanding Through a Workshop
+
+A maker does not declare a chair finished because it looks like a chair. Someone sits on it. The joints are checked, the instructions are written and the next maker can reproduce it.
+
+A project review is the sit test.
+
+## Discovering Review with Your AI Partner
+
+### Exploration 1: Plan the Scaffold
+
+Ask for the smallest runnable version.
+
+```text
+Here is the project brief:
+[paste it]
+
+Write the smallest runnable scaffold. It should run one prompt and print
+the result. Name the next feature and the check for it.
+```
+
+A scaffold that does not run is not a scaffold.
+
+### Exploration 2: Review the Code
+
+Ask for a review against the brief.
+
+```text
+Here is the project code and brief:
+[paste them]
+
+Check the code against the brief. Does it meet the objective? Is the
+model call visible? Are errors handled? Is the secret outside the code?
+List the gaps in priority order.
+```
+
+The review is not a style opinion. It is a check against the brief.
+
+### Exploration 3: Test the Demo
+
+Ask for a demo script.
+
+```text
+Write a three-minute demo script for this project. Include the input,
+the expected output, one failure and the explanation of the model call.
+```
+
+The demo is evidence of understanding.
+
+## From Concept to Practice
+
+A review checklist:
+
+- [ ] The project runs from the README
+- [ ] The objective is visible
+- [ ] The model call is in one place
+- [ ] The secret is outside the code
+- [ ] One success and one failure are tested
+- [ ] The limitation is documented
+- [ ] The demo explains the idea
+
+## Build Task
+
+Build the scaffold. Add one feature. Test the core check. Ask a peer to run it from the README without your help.
+
+## Classroom Connection
+
+The review checklist is the assessment rubric. It rewards understanding, not polish. A small project that runs and explains itself is better than a large one that does not.
+
+## Practice Exercises
+
+**Exercise 9.1 (Level 1).** List the six build steps.
+
+**Exercise 9.2 (Level 2).** Write the smallest runnable scaffold.
+
+**Exercise 9.3 (Level 3).** Test one success and one failure.
+
+**Exercise 9.4 (Level 4).** Review a peer's project against the brief.
+
+**Exercise 9.5 (Level 5).** Write the README and demo script for your project.
+
+## Chapter Summary
+
+- Plan, scaffold, implement, test, document and show.
+- The review is part of the build.
+- A peer must be able to run and explain it.
+- Test one success and one failure.
+- The demo explains the model call.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Wrote the scaffold
+- [ ] Added one feature
+- [ ] Tested the core check
+- [ ] Wrote the README
+- [ ] Ran a peer review
+
+## Your Learning Journal
+
+1. What broke first?
+2. What did the peer misunderstand?
+3. What would you cut next time?
+
+## Next Steps
+
+The project works. The next chapter maps the gallery.

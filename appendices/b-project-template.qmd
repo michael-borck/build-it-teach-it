@@ -1,0 +1,50 @@
+# Project Template {#sec-project-template}
+
+```markdown
+# Project: [title]
+
+**Difficulty:**
+**Time:**
+**Learning focus:**
+**Module:**
+
+## Overview
+
+## Learning objective
+
+## Inputs and outputs
+
+## Build steps
+
+## Core check
+
+## Failure to test
+
+## Extension
+
+## Evidence
+
+## Risk and mitigation
+
+## Demo plan
+```
+
+## Review checklist
+
+- [ ] The project runs from the README
+- [ ] The objective is visible
+- [ ] The model call is in one place
+- [ ] The secret is outside the code
+- [ ] One success and one failure are tested
+- [ ] The limitation is documented
+- [ ] The demo explains the idea
+- [ ] The student can explain the model call
+
+## Assessment rubric
+
+| Level | Understanding | Evidence | Explanation | Responsible use |
+|---|---|---|---|---|
+| 4 | Explains the wrapper and the model call | Tests success and failure | Clear and accurate | Discloses and protects data |
+| 3 | Explains most of the call | Tests success | Mostly clear | Mostly responsible |
+| 2 | Explains the output only | Limited evidence | Vague | Partial disclosure |
+| 1 | Cannot explain the call | No test | Copies the demo | Ignores policy |

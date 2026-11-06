@@ -1,0 +1,135 @@
+# Choose a Project {#sec-choose}
+
+> The best project is the smallest one that teaches the thing you came to learn.
+
+## The Concept First
+
+A project has a difficulty, a time, a module and a learning focus. Choosing well means matching those to the objective, not picking the most impressive demo.
+
+A useful project brief states:
+
+- the learning objective
+- the module
+- the difficulty and time
+- the inputs and outputs
+- the check
+- the extension
+- the risk
+
+The project gallery has more than forty options. Most are chat projects, which is useful: chat is the base every other module wraps.
+
+## Understanding Through a Recipe
+
+A recipe tells you the dish, the time, the ingredients and the skill. You do not choose a wedding cake for a ten-minute lesson.
+
+A project brief is a recipe for learning.
+
+## Discovering the Project with Your AI Partner
+
+### Exploration 1: Match Objective to Module
+
+Ask the AI to choose from the objective.
+
+```text
+My learning objective is: [paste it]
+The time is: [90 minutes]
+The students know: [Python basics]
+
+Recommend a HandsOnAI module and project. Explain why it fits, what it
+leaves out and what the student will be able to explain afterwards.
+```
+
+A good answer starts with the objective, not the project list.
+
+### Exploration 2: Cut the Scope
+
+Ask what to remove.
+
+```text
+Here is my project idea:
+[paste it]
+
+Cut it to the smallest version that still teaches the objective. Name
+the features to defer and the one check that proves the core works.
+```
+
+The smallest version is the one that fits the lesson.
+
+### Exploration 3: Find the Risk
+
+Ask what could go wrong.
+
+```text
+The project uses a model, student data and a chat interface. List the
+technical, privacy, cost and assessment risks. For each, name the
+mitigation.
+```
+
+A project plan without risk is a demo plan.
+
+## From Concept to Practice
+
+A project brief:
+
+```markdown
+# Project: [name]
+
+**Objective:**
+**Module:**
+**Difficulty:**
+**Time:**
+**Inputs:**
+**Outputs:**
+**Core check:**
+**Extension:**
+**Risk:**
+**Evidence:**
+```
+
+## Build Task
+
+Choose one project from the gallery. Write the brief. Cut it to the smallest version. Run the core check.
+
+## Classroom Connection
+
+A project brief makes assessment easier. The student knows what "done" means, and the teacher can see whether the objective was met without judging polish.
+
+## Practice Exercises
+
+**Exercise 8.1 (Level 1).** Name the four project attributes.
+
+**Exercise 8.2 (Level 2).** Write a project brief for a chat activity.
+
+**Exercise 8.3 (Level 3).** Cut a project to its smallest useful version.
+
+**Exercise 8.4 (Level 4).** Name three risks and mitigations.
+
+**Exercise 8.5 (Level 5).** Match three objectives to three projects and justify the choices.
+
+## Chapter Summary
+
+- Match difficulty, time, module and focus to the objective.
+- Start with the objective, not the gallery.
+- Cut to the smallest version that teaches the thing.
+- Name the core check.
+- Plan the risk.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Wrote a project brief
+- [ ] Cut the scope
+- [ ] Named the core check
+- [ ] Named three risks
+- [ ] Chose the evidence
+
+## Your Learning Journal
+
+1. Which project tempted you, and why?
+2. What did you cut?
+3. What is the smallest proof?
+
+## Next Steps
+
+The project is chosen. The next chapter builds and reviews it.

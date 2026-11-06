@@ -1,0 +1,49 @@
+# Build It, Teach It {.unnumbered}
+
+> The best way to understand a system is to build a small one, then teach someone else what you built.
+
+## Who this is for
+
+This book is for educators, students and self-learners who want to use the **HandsOnAI** lab to build small AI systems and teach the ideas underneath them.
+
+It assumes you can run Python and follow a command line. It does not assume you have built a RAG pipeline, an agent or a classroom AI policy.
+
+## The lab
+
+**HandsOnAI** is a learning lab, not a production framework. Every module is one model call wrapped in plain Python:
+
+- chat adds a system prompt and a transcript
+- RAG adds a search before the call
+- agents add tools and a loop
+- workflows add folders and review gates
+- loops add repetition and a stopping rule
+- evaluation adds a judge
+- vision and voice add converters at the edges
+
+The package is deliberately small. The point is to make the concept visible, not to hide it behind a framework.
+
+## Two tracks
+
+This book has two tracks that meet:
+
+- **Build:** choose a project, scaffold it, test it, document it and show it.
+- **Teach:** turn the project into a lesson, an assessment and a classroom policy.
+
+The project chapters are for students and self-learners. The classroom chapters are for educators. The module chapters serve both.
+
+## What you will build
+
+By the end, you will be able to:
+
+- explain the one-call shape behind chat, RAG, agents, workflows, loops, evaluation, vision and voice
+- set up a local, shared or cloud lab for a class
+- choose a project that fits the time and the learning objective
+- build and review a small project with tests and documentation
+- design a lesson, an assessment and a disclosure policy
+- keep the learning honest when the model is fluent and wrong
+
+## How to read it
+
+Read Part 1 and Part 2 in order. Then choose a project from Part 3 and use Part 4 to teach it.
+
+Each chapter ends with an AI exploration, a build or classroom task, a summary and a reflection. The appendices collect the module map, the project template and the classroom checklist.

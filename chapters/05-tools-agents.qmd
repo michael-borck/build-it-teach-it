@@ -1,0 +1,132 @@
+# Tools: Agents {#sec-agents}
+
+> A tool is a function the model may request. The harness decides whether it runs.
+
+## The Concept First
+
+An agent adds two things to chat: tools and a loop.
+
+A tool in HandsOnAI is a function with a simple contract:
+
+- a name
+- a description the model reads
+- one string input
+- one string output
+
+The model proposes a tool call. The harness runs the function and adds the result to the transcript. The model reads the result and decides what to do next.
+
+ReAct is the readable pattern: Thought, Action, Action Input, Observation, repeat, Final Answer.
+
+The safety boundary is the tool list. A calculator is low risk. A file write, an email send or a payment is high risk. The model does not grant itself permission. The harness exposes the tools.
+
+## Understanding Through a Workshop
+
+A craftsperson has a bench and a set of tools. The apprentice can ask for a tool, but the supervisor decides which tools are on the bench.
+
+An agent is the apprentice. The tool list is the bench. The harness is the supervisor.
+
+## Discovering Agents with Your AI Partner
+
+### Exploration 1: Write the Tool Description
+
+Ask the AI to turn a function into a tool description.
+
+```text
+Here is a Python function:
+[paste it]
+
+Write the tool name, description and input format a model would need to
+use it correctly. Include one example input and the error message for a
+bad input.
+```
+
+The description is part of the interface.
+
+### Exploration 2: Trace the Loop
+
+Ask for a step-by-step trace.
+
+```text
+Here is an agent run:
+[paste the trace]
+
+Label each Thought, Action, Action Input, Observation and Final Answer.
+Mark where the model changed its plan after an observation.
+```
+
+The trace is the lesson.
+
+### Exploration 3: Find the Dangerous Tool
+
+Ask what should not be on the bench.
+
+```text
+List the tools in this agent and classify each as read-only, write,
+communicate or financial. Recommend which ones need a human approval
+gate and what the gate should check.
+```
+
+A tool inventory is a risk assessment.
+
+## From Concept to Practice
+
+A tool record:
+
+| Field | Entry |
+|---|---|
+| Name | calculator |
+| Description | Evaluate a Python arithmetic expression |
+| Input | Expression string |
+| Output | Result string |
+| Risk | Low |
+| Gate | None |
+| Test | `2 + 2` returns 4 |
+| Failure | Bad input returns an error string |
+
+## Build Task
+
+Register one custom tool and run an agent that needs it. Print the trace. Then add a second tool and a question that needs both.
+
+## Classroom Connection
+
+Agents teach decomposition, tool contracts and oversight. The visible trace is the assessment artefact: the student can explain why the agent chose a tool and where the result came from.
+
+## Practice Exercises
+
+**Exercise 5.1 (Level 1).** Explain the tool contract.
+
+**Exercise 5.2 (Level 2).** Write a description for a simple tool.
+
+**Exercise 5.3 (Level 3).** Run an agent and label the trace.
+
+**Exercise 5.4 (Level 4).** Classify three tools by risk and add one approval gate.
+
+**Exercise 5.5 (Level 5).** Build a two-tool agent for a classroom task and document the failure modes.
+
+## Chapter Summary
+
+- An agent adds tools and a loop.
+- A tool is a named function with a description and a string contract.
+- The model proposes; the harness runs.
+- The tool list is the safety boundary.
+- The trace is the teaching artefact.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Wrote a tool description
+- [ ] Ran an agent
+- [ ] Labeled the trace
+- [ ] Classified the tools
+- [ ] Added a gate
+
+## Your Learning Journal
+
+1. Which tool description mattered most?
+2. Where did the model change its plan?
+3. Which tool would you never expose without approval?
+
+## Next Steps
+
+The agent acts. The next chapter adds structure, repetition and judgement.

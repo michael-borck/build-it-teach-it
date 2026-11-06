@@ -1,0 +1,133 @@
+# Assess, Disclose and Keep It Safe {#sec-assess}
+
+> Assessment should reward understanding, not the polished output of a model.
+
+## The Concept First
+
+A HandsOnAI project can be assessed through:
+
+- **Portfolio**: the project, the code and the README.
+- **Demonstration**: a short run and an explanation.
+- **Reflection**: what the student learned about the model's limits.
+- **Peer review**: whether another student can run and explain it.
+- **Test evidence**: one success and one failure.
+
+The assessment should make the model call visible. A student who cannot explain the call has not learned the module.
+
+AI use also needs a policy:
+
+- **Disclosure**: when and how AI was used.
+- **Privacy**: what data may be sent to which provider.
+- **Cost**: who pays and what the limit is.
+- **Accessibility**: whether the tool works for every student.
+- **Academic integrity**: which tasks must be the student's own.
+- **Safety**: what the bot may not do.
+
+A local model is easier to approve for sensitive material. A hosted model needs a contract and a data review.
+
+## Understanding Through a Driving Test
+
+A driving test does not reward the smoothest passenger. It checks whether the driver can handle the car, the rules and an unexpected event.
+
+A project assessment checks whether the student can run the project, explain the model call and handle a failure.
+
+## Discovering Assessment with Your AI Partner
+
+### Exploration 1: Build the Rubric
+
+Ask the AI to turn the objective into a rubric.
+
+```text
+Here is the project objective and the core check:
+[paste them]
+
+Write a four-level rubric for understanding, evidence, explanation and
+responsible use. Do not reward polish over understanding.
+```
+
+A good rubric names what the student can explain.
+
+### Exploration 2: Write the Disclosure
+
+Ask for a student-facing AI-use statement.
+
+```text
+Write a short AI-use disclosure for a HandsOnAI project. Include which
+tools were used, what they helped with, what was checked and what the
+student wrote themselves.
+```
+
+Disclosure is a habit, not a punishment.
+
+### Exploration 3: Check the Data
+
+Ask what leaves the room.
+
+```text
+The project sends student text to a model. List the privacy, cost and
+accessibility questions the instructor must answer before the lesson.
+Include local versus hosted, retention and consent.
+```
+
+A classroom activity is a data-processing decision.
+
+## From Concept to Practice
+
+An assessment record:
+
+| Element | Evidence |
+|---|---|
+| Objective | Brief and demo |
+| Core check | Test output |
+| Explanation | Student describes the model call |
+| Failure | One tested failure |
+| Responsible use | Disclosure and data policy |
+| Reflection | What the model cannot do |
+
+## Build Task
+
+Write the rubric, the disclosure statement and the data policy for your lesson. Ask one student or colleague to explain the model call without notes.
+
+## Classroom Connection
+
+Assessment is the last chance to teach. The rubric tells students what matters: understanding, evidence and responsible use, not a fluent final answer.
+
+## Practice Exercises
+
+**Exercise 12.1 (Level 1).** Name four assessment methods.
+
+**Exercise 12.2 (Level 2).** Write a four-level rubric.
+
+**Exercise 12.3 (Level 3).** Write an AI-use disclosure.
+
+**Exercise 12.4 (Level 4).** Answer the privacy, cost and accessibility questions for your class.
+
+**Exercise 12.5 (Level 5).** Run the assessment and compare the rubric with the student's explanation.
+
+## Chapter Summary
+
+- Assess understanding, not polish.
+- Use a portfolio, demo, reflection, peer review and test evidence.
+- Disclose AI use.
+- Decide the data, cost and accessibility policy.
+- A local model is easier to approve for sensitive material.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Wrote the rubric
+- [ ] Wrote the disclosure
+- [ ] Answered the data questions
+- [ ] Checked accessibility
+- [ ] Ran the explanation check
+
+## Your Learning Journal
+
+1. Which assessment caught the most understanding?
+2. What did the disclosure reveal?
+3. What data decision was hardest?
+
+## Next Steps
+
+The course is assessed. The appendices collect the module map, the project template and the classroom checklist.

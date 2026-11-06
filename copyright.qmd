@@ -1,0 +1,11 @@
+# Copyright {.unnumbered}
+
+**Build It, Teach It: Hands-on AI Projects for the Classroom**
+
+© 2026 Michael Borck.
+
+Book content is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0 International)](https://creativecommons.org/licenses/by/4.0/).
+
+The HandsOnAI package is licensed separately under the MIT License. Third-party models and services retain their own terms.
+
+**ISBN:** (to be assigned)

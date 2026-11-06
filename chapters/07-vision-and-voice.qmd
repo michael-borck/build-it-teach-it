@@ -1,0 +1,126 @@
+# Vision and Voice {#sec-senses}
+
+> Images and speech are input formats, not a new kind of intelligence.
+
+## The Concept First
+
+A vision-language model converts an image into tokens and reads them alongside your text. `describe("photo.jpg", "What is in this photo?")` is the same call with one more input type.
+
+A voice agent converts speech to text, calls the chat model, and converts the reply to speech. `transcribe` and `speak` are format converters.
+
+The limitations are the lesson:
+
+- Vision miscounts, misses small text and gets spatial detail wrong.
+- A confident description can invent details.
+- Speech recognition struggles with noise and accents.
+- Voice latency adds up at every step.
+- Turn-taking and interruption are engineering problems, not model problems.
+
+## Understanding Through a Translator
+
+A translator converts one language into another so the same conversation can happen. The translator does not make the speaker wiser.
+
+Vision and voice are translators at the edges of the same conversation.
+
+## Discovering the Senses with Your AI Partner
+
+### Exploration 1: Test the Description
+
+Ask the AI to compare a description with the image.
+
+```text
+Here is an image description from a VLM:
+[paste it]
+
+List the claims that a person could verify from the image and the claims
+that could be invented. Design three questions that would test the
+model's counting, small-text reading and spatial accuracy.
+```
+
+The questions expose the limits.
+
+### Exploration 2: Design the Voice Loop
+
+Ask for the simplest voice agent.
+
+```text
+Design a voice loop using speech-to-text, chat and text-to-speech.
+Include the recording step, the turn-taking rule, the latency budget and
+the failure when the microphone is unavailable.
+```
+
+The hard part is around the model, not inside it.
+
+### Exploration 3: Find the Accessibility Use
+
+Ask for a useful classroom application.
+
+```text
+Design a vision or voice activity that improves accessibility rather
+than replacing a student's work. Include the task, the check and the
+privacy question.
+```
+
+Alt-text generation, spoken feedback and translation are candidates.
+
+## From Concept to Practice
+
+A senses record:
+
+| Field | Entry |
+|---|---|
+| Input | Image or audio |
+| Converter | VLM, STT or TTS |
+| Model | Name and version |
+| Output | Text or audio |
+| Check | Counting, small text, noise or latency |
+| Limitation | What the model cannot see or hear |
+| Privacy | Where the file goes |
+
+## Build Task
+
+Describe one image and ask three questions: what is visible, how many objects, and what text is present. Compare the answers with the image. Then run a short speech-to-text test.
+
+## Classroom Connection
+
+Vision and voice are engaging, which makes them good hooks. The lesson is the limitation: a fluent description is not a measurement, and a voice interface is not a conversation.
+
+## Practice Exercises
+
+**Exercise 7.1 (Level 1).** Explain why vision is the same call with a new input.
+
+**Exercise 7.2 (Level 2).** Describe an image and check one claim.
+
+**Exercise 7.3 (Level 3).** Test counting, small text and spatial detail.
+
+**Exercise 7.4 (Level 4).** Design a voice loop with turn-taking.
+
+**Exercise 7.5 (Level 5).** Build an accessibility activity with a privacy and accuracy check.
+
+## Chapter Summary
+
+- Vision and voice are input converters around the same call.
+- Vision is unreliable for counting, small text and spatial detail.
+- Voice adds latency, noise and turn-taking problems.
+- Engaging demos still need checks.
+- Accessibility is a strong use case.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Described one image
+- [ ] Tested three limitations
+- [ ] Designed a voice loop
+- [ ] Named a privacy question
+- [ ] Found an accessibility use
+
+## Your Learning Journal
+
+1. Which vision claim was wrong?
+2. Where did voice latency appear?
+3. What would make the activity accessible?
+
+## Next Steps
+
+The modules are mapped. The next chapter chooses a project.

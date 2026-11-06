@@ -1,0 +1,138 @@
+# One Call, Many Wrappers {#sec-one-call}
+
+> Every module in the lab is a model call with one extra idea around it.
+
+## The Concept First
+
+HandsOnAI looks like many tools: chat, RAG, agents, workflows, loops, evaluation, vision and voice. Underneath, the shape is the same.
+
+A model receives a payload and returns text. Everything else is a wrapper:
+
+- **Chat** adds a system prompt and a message list.
+- **RAG** searches documents and pastes the results into the prompt.
+- **Agent** gives the model tools and a loop.
+- **Workflow** organises stages as folders with review gates.
+- **Loop** repeats a step until a goal is met.
+- **Evaluation** asks a model to judge output against criteria.
+- **Vision** converts an image into tokens in the same request.
+- **Voice** converts speech to text and text to speech around the chat call.
+
+The package is small on purpose. It is a learning lab, not a production framework. The goal is to make the concept visible, not to hide it.
+
+That has a consequence for teaching: you do not need to cover every module. Teach the shape, then let the projects explore the wrappers.
+
+## Understanding Through a Food Truck
+
+A food truck sells many dishes. The base is the same: a vehicle, a kitchen, a service window and a queue.
+
+A new cuisine changes the ingredients and the menu, not the fact that someone cooks and someone serves.
+
+HandsOnAI is the truck. The modules are the menu. The model call is the kitchen.
+
+## Discovering the Shape with Your AI Partner
+
+### Exploration 1: Map the Wrapper
+
+Ask the AI to map each module to the call it wraps.
+
+```text
+Here are the HandsOnAI modules:
+[paste the list]
+
+For each one, name what it adds around the model call. Include the new
+input, the new state, the new loop or the new output. Mark any module
+that is a side door rather than a stop on the main path.
+```
+
+A good answer will put vision and voice at the edges and the core loop through chat, RAG, agent, workflow and evaluation.
+
+### Exploration 2: Find the Shared Failure
+
+Ask what can go wrong in every wrapper.
+
+```text
+Every module ultimately calls a model. List the failures that can appear
+in all of them, regardless of the wrapper. Include a fluent wrong answer,
+a missing source, a tool error, a loop that will not stop and a cost
+overrun.
+```
+
+The shared failures are the teaching opportunities.
+
+### Exploration 3: Choose the Depth
+
+Ask what to skip.
+
+```text
+A teacher has six hours for an introduction. The students can run
+Python but have not built an AI system. Choose three modules to build
+and two to demonstrate. Explain the sequence and what you would leave
+out.
+```
+
+The answer is a curriculum decision, not a feature list.
+
+## From Concept to Practice
+
+A module map:
+
+| Module | Wrapper | New input | New risk |
+|---|---|---|---|
+| Chat | System prompt and transcript | Prompt history | Hallucination, memory cost |
+| RAG | Search before the call | Documents | Stale index, unsupported citation |
+| Agent | Tools and a loop | Tool results | Tool misuse, runaway loop |
+| Workflow | Folders and review gates | Stage outputs | Vague stage contract |
+| Loop | Repetition and a goal | Goal check | Optimising the wrong measure |
+| Evaluation | A judge | Criteria | Bias, inconsistency |
+| Vision | Image tokens | Image | Miscounting, confident nonsense |
+| Voice | Speech converters | Audio | Noise, latency, turn-taking |
+
+The map is the course outline.
+
+## Build Task
+
+Run the quickstart chat example. Then print the payload it sends. Mark which parts belong to the model and which belong to the wrapper.
+
+## Classroom Connection
+
+Teach the shape before the modules. A student who can say "RAG is search plus a prompt" has a mental model that survives a change of framework.
+
+## Practice Exercises
+
+**Exercise 1.1 (Level 1).** Name the wrapper that chat adds.
+
+**Exercise 1.2 (Level 2).** Map three modules to their wrappers.
+
+**Exercise 1.3 (Level 3).** Explain why the package is small on purpose.
+
+**Exercise 1.4 (Level 4).** Choose three modules for a six-hour introduction and justify the choice.
+
+**Exercise 1.5 (Level 5).** Design a one-hour lesson that teaches the shared shape without covering every module.
+
+## Chapter Summary
+
+- Every module is a model call plus a wrapper.
+- The wrappers add prompts, evidence, tools, structure, repetition, judgement or senses.
+- The lab is small on purpose.
+- Teach the shape, then choose the modules.
+- Shared failures are teaching opportunities.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Mapped the wrappers
+- [ ] Named the shared failures
+- [ ] Chose a teaching depth
+- [ ] Ran one module
+- [ ] Identified what to skip
+
+## Your Learning Journal
+
+1. Which wrapper was hardest to explain?
+2. Where does the model end and the wrapper begin?
+3. What would you teach first?
+
+## Next Steps
+
+The shape is clear. The next chapter sets up a lab that can run it.

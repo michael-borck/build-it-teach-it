@@ -1,0 +1,150 @@
+# Set Up the Lab {#sec-setup}
+
+> A classroom lab fails on setup before it fails on AI.
+
+## The Concept First
+
+HandsOnAI needs Python 3.10+, the package and an OpenAI-compatible provider. There are three common setups:
+
+- **Local Ollama**: runs on the student machine or a lab machine. Private, offline-capable, limited by hardware.
+- **Shared classroom server**: one Ollama server on the network. Consistent, centralised, easier to monitor.
+- **Cloud provider**: an API key and a hosted model. Least setup, but data leaves the room and costs money.
+
+The configuration is three environment variables:
+
+```bash
+export HANDS_ON_AI_SERVER="http://localhost:11434"
+export HANDS_ON_AI_MODEL="llama3"
+export HANDS_ON_AI_API_KEY=""
+```
+
+A local server needs no key. A hosted provider does. Never put a real key in a script, a slide or a repository.
+
+The diagnostic command is:
+
+```bash
+handsonai doctor
+```
+
+Run it before class. It prints the server, model and key status, and checks the connection.
+
+## Understanding Through a Science Lab
+
+A science lab is prepared before the students arrive: equipment, reagents, safety rules and a trial run.
+
+If the equipment is missing, the lesson becomes a troubleshooting session. If the safety rules are unclear, the lesson becomes an incident.
+
+A classroom AI lab needs the same preparation.
+
+## Discovering Setup with Your AI Partner
+
+### Exploration 1: Choose the Provider
+
+Ask the AI to compare the options for a specific class.
+
+```text
+A class of 25 students has old laptops, limited Wi-Fi and a strict
+privacy policy. Compare local Ollama, a shared classroom server and a
+cloud provider. Recommend one and name the trade-offs.
+```
+
+The answer should consider hardware, privacy, bandwidth, cost and support.
+
+### Exploration 2: Build the Checklist
+
+Ask for a pre-class checklist.
+
+```text
+Write a setup checklist for a HandsOnAI class. Include Python, the
+package, the provider, the model, the diagnostic command, a test script,
+the API key policy and a fallback if the network fails.
+```
+
+The fallback is part of the plan.
+
+### Exploration 3: Test the Failure
+
+Ask what students see when the server is down.
+
+```text
+The Ollama server is not running. Write the message a student should
+see and the three checks they should make. Do not let the error look
+like a model answer.
+```
+
+A setup failure should be diagnosable in minutes.
+
+## From Concept to Practice
+
+A classroom setup checklist:
+
+```markdown
+# Lab setup
+
+## Machines
+- [ ] Python 3.10+
+- [ ] Package installed
+- [ ] Model available
+- [ ] `handsonai doctor` passes
+
+## Provider
+- [ ] Local, shared or cloud
+- [ ] Server URL
+- [ ] Model name
+- [ ] Key policy
+- [ ] Cost limit
+
+## Classroom
+- [ ] Test script
+- [ ] Offline fallback
+- [ ] Privacy and disclosure
+- [ ] Support contact
+```
+
+## Build Task
+
+Run the setup on one machine. Install the package, run `handsonai doctor`, run a chat call, and record the output. Then stop the server and record the failure.
+
+## Classroom Connection
+
+A shared server reduces setup variance. A local model protects privacy. A cloud provider gives access to stronger models. The choice is a teaching and policy decision, not only a technical one.
+
+## Practice Exercises
+
+**Exercise 2.1 (Level 1).** Name the three environment variables.
+
+**Exercise 2.2 (Level 2).** Run `handsonai doctor` and record the result.
+
+**Exercise 2.3 (Level 3).** Compare local, shared and cloud for a class of 25.
+
+**Exercise 2.4 (Level 4).** Write the offline fallback for a network failure.
+
+**Exercise 2.5 (Level 5).** Produce a complete classroom setup plan with a privacy and cost decision.
+
+## Chapter Summary
+
+- The lab needs Python, the package and a provider.
+- Local, shared and cloud setups have different trade-offs.
+- Three environment variables configure the provider.
+- Run the doctor before class.
+- A fallback is part of the setup.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Chose a provider
+- [ ] Ran the doctor
+- [ ] Tested one call
+- [ ] Tested one failure
+- [ ] Wrote the fallback
+
+## Your Learning Journal
+
+1. Which setup would you choose for your class?
+2. What failed first?
+3. What would you prepare before the students arrive?
+
+## Next Steps
+
+The lab runs. The next chapter starts with chat, the module every other module wraps.

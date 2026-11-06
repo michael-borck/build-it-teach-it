@@ -1,0 +1,126 @@
+# The Project Gallery {#sec-gallery}
+
+> The gallery is a menu, not a checklist. Choose one project and finish it.
+
+## The Concept First
+
+HandsOnAI ships projects across the modules:
+
+- **Chat**: personality bots, quizzes, journals, simulations, games, tutors, converters.
+- **RAG**: first RAG bot, QA CLI, PDF question answering, hybrid reasoning.
+- **Agent**: calculator, date tool, unit conversion, custom tool, multi-tool problem solving, evaluation.
+- **Workflow**: build a pipeline.
+- **Loop**: improve until good, build a Ralph loop.
+- **Eval**: judge your bot.
+- **Vision**: the talking picture.
+- **Voice**: the world's smallest Pipecat.
+
+The projects share a template: difficulty, time, learning focus, module, overview, instructions, extensions and assessment.
+
+The teaching risk is project sprawl. A student who starts five projects finishes none.
+
+## Understanding Through a Menu
+
+A menu with forty dishes is not a meal. You choose one, eat it and decide what to try next.
+
+The gallery is a menu. The lesson is the meal.
+
+## Discovering the Gallery with Your AI Partner
+
+### Exploration 1: Choose by Objective
+
+Ask the AI to shortlist three projects.
+
+```text
+Here is the learning objective and the time:
+[paste them]
+
+Shortlist three projects from the HandsOnAI gallery that fit. For each,
+name the module, the core check and the reason it fits. Recommend one.
+```
+
+The objective filters the menu.
+
+### Exploration 2: Compare Difficulty
+
+Ask what changes with difficulty.
+
+```text
+Compare a beginner chat project with an intermediate agent project.
+Explain the difference in code, concepts, time and assessment. Which
+one teaches more per hour for a first course?
+```
+
+More difficulty is not more learning.
+
+### Exploration 3: Plan the Showcase
+
+Ask how to present the project.
+
+```text
+Design a five-minute showcase for a project. Include the objective, the
+demo, one failure, the model call and the reflection. Do not let the
+demo hide the limitation.
+```
+
+The showcase is an assessment opportunity.
+
+## From Concept to Practice
+
+A gallery shortlist:
+
+| Project | Module | Time | Core check | Fit |
+|---|---|---|---|---|
+| Quiz bot | Chat | 45-60 min | Score and feedback | Lists, loops, parsing |
+| First RAG bot | RAG | 45 min | Answer cites a source | Evidence |
+| Calculator agent | Agent | 30-45 min | Correct calculation via tool | Tool contract |
+| Improve until good | Loop | 45 min | Goal check and log | Iteration |
+| Judge your bot | Eval | 45 min | Score and human comparison | Assessment |
+
+## Build Task
+
+Choose one project. Write the brief, the core check and the showcase plan. Do not start a second project until the first runs.
+
+## Classroom Connection
+
+A completed small project is a better portfolio piece than five unfinished ones. The gallery supports choice; the brief creates focus.
+
+## Practice Exercises
+
+**Exercise 10.1 (Level 1).** Name the project categories.
+
+**Exercise 10.2 (Level 2).** Shortlist three projects for one objective.
+
+**Exercise 10.3 (Level 3).** Compare two projects by learning per hour.
+
+**Exercise 10.4 (Level 4).** Write a showcase plan with a failure.
+
+**Exercise 10.5 (Level 5).** Build one project and map it to three learning objectives.
+
+## Chapter Summary
+
+- The gallery covers chat, RAG, agents, workflows, loops, evaluation, vision and voice.
+- Projects share a template.
+- Choose by objective, not by novelty.
+- Finish one project before starting another.
+- The showcase is part of the assessment.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Shortlisted three projects
+- [ ] Chose one
+- [ ] Wrote the core check
+- [ ] Planned the showcase
+- [ ] Resisted the second project
+
+## Your Learning Journal
+
+1. Which project fits your objective?
+2. What did you leave out?
+3. What will you show?
+
+## Next Steps
+
+The project is chosen. The next chapter turns it into a lesson.

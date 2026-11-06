@@ -1,0 +1,7 @@
+# Acknowledgments {.unnumbered}
+
+This book is a project and teaching companion to **HandsOnAI**, a learning lab for building small versions of modern AI systems. The package, its documentation and its project gallery supply the code and the activities. This book supplies the sequence for building and teaching them.
+
+The lab's philosophy is deliberate: small on purpose, readable, and honest about what it leaves out. That philosophy shapes every recommendation here. The goal is understanding, not a production framework.
+
+AI assistants were used for drafting and review. They also produced project plans that ignored time, assessment and data policy, which is why the book treats the classroom constraints as part of the build. The judgement and the responsibility for every claim remain the author's.

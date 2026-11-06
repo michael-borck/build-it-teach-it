@@ -1,0 +1,130 @@
+# Grounding: RAG {#sec-rag}
+
+> Retrieval-augmented generation is search plus a prompt with the results in it.
+
+## The Concept First
+
+A model answers from two things: the prompt in front of it and what it learned during training. It does not know your notes, your policy or today's timetable.
+
+RAG adds evidence:
+
+1. **Index** the documents: load, chunk, embed and save.
+2. **Ask** a question: embed the question, fetch the closest chunks, put them in the prompt, call the model.
+
+The model still does the language work. The retriever does the finding. Both are needed.
+
+The teaching points are the failure points:
+
+- a document that was never indexed is invisible
+- a stale index returns the old rule
+- a chunk boundary can cut an answer in half
+- a cited passage may not support the claim
+- the model may answer beyond the evidence
+
+## Understanding Through a Library Card Catalogue
+
+A librarian does not reread every book when you ask a question. They use the catalogue to find a few passages, then read them with you.
+
+The catalogue is the index. The passages are the context. The librarian's explanation is the model.
+
+## Discovering RAG with Your AI Partner
+
+### Exploration 1: Separate the Phases
+
+Ask the AI to separate indexing from answering.
+
+```text
+Here is a RAG description:
+[paste it]
+
+List the steps that happen once at indexing time and the steps that
+happen on every question. Mark which steps cost a model call.
+```
+
+The separation prevents most confusion about RAG.
+
+### Exploration 2: Test the Evidence
+
+Ask what a citation proves.
+
+```text
+A RAG answer cites a document. Explain what the citation proves and what
+it does not. Design a check that confirms the cited passage supports the
+claim.
+```
+
+A citation label is not support. The passage is.
+
+### Exploration 3: Break the Index
+
+Ask what happens when the source changes.
+
+```text
+A policy changes, but the index is a week old. Explain what the bot
+returns and how the class would detect the staleness. Propose a fix.
+```
+
+Re-indexing is a maintenance task, not a one-off setup step.
+
+## From Concept to Practice
+
+A RAG record:
+
+| Field | Entry |
+|---|---|
+| Documents | Source, owner and date |
+| Index | Chunk size, embedding model, location |
+| Question | What the user asked |
+| Retrieved | Chunk IDs and scores |
+| Answer | The model response |
+| Citation | Document and passage |
+| Check | Does the passage support the claim? |
+| Limitation | Coverage and freshness |
+
+## Build Task
+
+Index a small folder of notes. Ask three questions: one answerable, one partly answerable and one not in the documents. Record the retrieved chunks and the answer for each.
+
+## Classroom Connection
+
+RAG is the best module for teaching evidence. The student can see the source, the retrieved passage and the answer. The discussion is whether the passage actually supports the claim.
+
+## Practice Exercises
+
+**Exercise 4.1 (Level 1).** Explain RAG in one sentence.
+
+**Exercise 4.2 (Level 2).** List the indexing steps and the answering steps.
+
+**Exercise 4.3 (Level 3).** Ask one answerable and one unanswerable question.
+
+**Exercise 4.4 (Level 4).** Check whether a cited passage supports the answer.
+
+**Exercise 4.5 (Level 5).** Design a small evaluation set for retrieval quality.
+
+## Chapter Summary
+
+- RAG is search plus a prompt with evidence.
+- Indexing happens once; answering happens per question.
+- A citation is not proof; the passage is.
+- Stale indexes and chunk boundaries cause failures.
+- RAG is the best module for teaching evidence.
+
+## Reflection
+
+Before moving on, ensure you:
+
+- [ ] Separated indexing from answering
+- [ ] Asked an unanswerable question
+- [ ] Checked one citation
+- [ ] Found one limitation
+- [ ] Planned a re-index
+
+## Your Learning Journal
+
+1. Which retrieved chunk was most useful?
+2. What did the bot answer without evidence?
+3. How would you keep the index fresh?
+
+## Next Steps
+
+The answer has evidence. The next chapter gives the model tools.
